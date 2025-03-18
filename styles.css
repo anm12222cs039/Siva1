@@ -1,0 +1,85 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #00796b;
+}
+
+.search {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e0f2f1;
+    font-size: 1rem;
+    outline-color: #00796b; /* Highlight input field on focus */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #00695c; /* Slightly brighter on hover */
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.weather-info h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #004d40; /* Dark green for emphasis */
+}
+
+.weather-info p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #546e7a; /* Soft gray-blue for secondary text */
+}
